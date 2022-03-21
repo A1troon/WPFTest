@@ -4,27 +4,21 @@ namespace WPFTest
 {
     class Test
     {
-        public String Q; 
-        public String V1; 
-        public String V2; 
-        public String V3; public int PV;
+        public string Question { get; set; }
+        public int Answer { get; set; }
+        public int AnswerChecked { get; set; }
+        public string []V {get; set;}
 
-        public Test()
+        public Test() { }
+
+        public Test(string question, int answer, string[] v)
         {
-            Q = "";
-            V1 = "";
-            V2 = "";
-            V3 = ""; 
-            PV = 0;
+            Question = question;
+            Answer = answer;
+            V = v;
+            AnswerChecked = 0;
         }
 
-        public Test(string q, string v1, string v2, string v3, int pv)
-        {
-            Q = q;
-            V1 = v1;
-            V2 = v2;
-            V3 = v3;
-            PV = pv;
-        }
+      
     }
 }
